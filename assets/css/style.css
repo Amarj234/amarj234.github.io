@@ -2492,7 +2492,7 @@ textarea.form-input::-webkit-resizer {
 
   .sidebar,
   article {
-    width: 700px;
+    width: 800px;
   }
 
   .has-scrollbar::-webkit-scrollbar-button {
@@ -2816,7 +2816,7 @@ textarea.form-input::-webkit-resizer {
 
   .sidebar,
   article {
-    width: 950px;
+    width: 1050px;
     box-shadow: var(--shadow-5);
   }
 
