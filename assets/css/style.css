@@ -327,13 +327,13 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
+  max-height: 380px;
   overflow: hidden;
   transition: var(--transition-2);
 }
 
 .sidebar.active {
-  max-height: 405px;
+  max-height: 805px;
 }
 
 .sidebar-info {
@@ -1836,12 +1836,12 @@ textarea.form-input::-webkit-resizer {
    */
 
   .sidebar {
-    max-height: 180px;
+    max-height: 500px;
     margin-bottom: 30px;
   }
 
   .sidebar.active {
-    max-height: 584px;
+    max-height: 884px;
   }
 
   .sidebar-info {
