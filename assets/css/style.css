@@ -165,7 +165,6 @@ article {
   padding: 15px;
   box-shadow: var(--shadow-1);
   z-index: 1;
-  padding-left: 70px;
 }
 
 .separator {
@@ -328,13 +327,13 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 380px;
+  max-height: 112px;
   overflow: hidden;
   transition: var(--transition-2);
 }
 
 .sidebar.active {
-  max-height: 805px;
+  max-height: 405px;
 }
 
 .sidebar-info {
@@ -1797,7 +1796,7 @@ textarea.form-input::-webkit-resizer {
 
   .sidebar,
   article {
-    width: 620px;
+    width: 520px;
     margin-inline: auto;
     padding: 30px;
   }
@@ -1837,12 +1836,12 @@ textarea.form-input::-webkit-resizer {
    */
 
   .sidebar {
-    max-height: 500px;
+    max-height: 180px;
     margin-bottom: 30px;
   }
 
   .sidebar.active {
-    max-height: 884px;
+    max-height: 584px;
   }
 
   .sidebar-info {
@@ -2493,7 +2492,7 @@ textarea.form-input::-webkit-resizer {
 
   .sidebar,
   article {
-    width: 800px;
+    width: 700px;
   }
 
   .has-scrollbar::-webkit-scrollbar-button {
@@ -2817,7 +2816,7 @@ textarea.form-input::-webkit-resizer {
 
   .sidebar,
   article {
-    width: 1050px;
+    width: 950px;
     box-shadow: var(--shadow-5);
   }
 
