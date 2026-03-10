@@ -1069,6 +1069,49 @@ section .container {
   background-color: var(--orange-yellow-crayola);
 }
 
+/* Download Button Styles */
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-gradient-yellow-1);
+  background-color: var(--orange-yellow-crayola);
+  color: var(--smoky-black) !important;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: var(--transition-1);
+  box-shadow: var(--shadow-2);
+  border: 1px solid var(--orange-yellow-crayola);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.download-btn i, .download-btn ion-icon {
+  font-size: 20px;
+}
+
+.download-btn:hover {
+  background: var(--bg-gradient-yellow-2);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-3);
+  color: var(--smoky-black) !important;
+}
+
+.download-btn.android {
+  border-color: #3ddc84;
+}
+
+.download-btn.ios {
+  border-color: #007aff;
+}
+
+.download-btn.pub {
+  border-color: #0175c2;
+}
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
