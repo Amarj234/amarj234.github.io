@@ -842,43 +842,44 @@
 
                     <section class="projects">
 
-                         <div class="filter-select-box">
+                          <ul class="filter-list">
 
-                              <button class="filter-select" data-select>
+                               <li class="filter-item">
+                                    <button class="active" data-filter-btn>All</button>
+                               </li>
 
-                                   <div class="select-value" data-selecct-value>Select category</div>
+                               <li class="filter-item">
+                                    <button data-filter-btn>Applications</button>
+                               </li>
 
-                                   <div class="select-icon">
-                                        <ion-icon name="chevron-down"></ion-icon>
-                                   </div>
+                               <li class="filter-item">
+                                    <button data-filter-btn>Plugins</button>
+                               </li>
 
-                              </button>
-
-                              <ul class="select-list">
-
-                                   <li class="select-item">
-                                        <button data-select-item>All</button>
-                                   </li>
-
-                                   <li class="select-item">
-                                        <button data-select-item>Web design</button>
-                                   </li>
-
-                                   <li class="select-item">
-                                        <button data-select-item>Applications</button>
-                                   </li>
-
-                                   <li class="select-item">
-                                        <button data-select-item>Web development</button>
-                                   </li>
-                              </ul>
-
-                         </div>
+                          </ul>
 
                          <ul class="project-list">
 
-                              <li class="project-item  active" data-filter-item data-category="web development">
-                                   <a href="portfolio/workerlly.html" target="_blank">
+                              <li class="project-item  active" data-filter-item data-category="applications">
+                                   <a href="portfolio/sudo.html" target="_blank">
+
+                                        <figure class="project-img">
+                                             <div class="project-item-icon-box">
+                                                  <ion-icon name="eye-outline"></ion-icon>
+                                             </div>
+
+                                             <img height="300" src="./assets/img/portfolio/sudo/logo.png" alt="Sudo Messenger" loading="lazy">
+                                        </figure>
+
+                                        <h3 class="project-title">Sudo Messenger</h3>
+
+                                        <p class="project-category">Decentralized Web3 Messaging Platform</p>
+
+                                   </a>
+                               </li>
+
+                               <li class="project-item  active" data-filter-item data-category="applications">
+                                    <a href="portfolio/workerlly.html" target="_blank">
 
                                         <figure class="project-img">
                                              <div class="project-item-icon-box">
@@ -895,7 +896,7 @@
                                    </a>
                               </li>
 
-                              <li class="project-item  active" data-filter-item data-category="web development">
+                              <li class="project-item  active" data-filter-item data-category="applications">
                                    <a href="portfolio/workerlly_worker.html" target="_blank">
 
                                         <figure class="project-img">
@@ -913,7 +914,7 @@
                                    </a>
                               </li>
 
-                              <li class="project-item  active" data-filter-item data-category="web development">
+                              <li class="project-item  active" data-filter-item data-category="plugins">
                                    <a href="portfolio/background_location_fetch.html" target="_blank">
 
                                         <figure class="project-img">
@@ -931,7 +932,7 @@
                                    </a>
                               </li>
 
-                              <li class="project-item  active" data-filter-item data-category="web development">
+                              <li class="project-item  active" data-filter-item data-category="plugins">
                                    <a href="portfolio/distance_route.html" target="_blank">
 
                                         <figure class="project-img">
@@ -949,7 +950,7 @@
                                    </a>
                               </li>
 
-                              <li class="project-item  active" data-filter-item data-category="web development">
+                              <li class="project-item  active" data-filter-item data-category="plugins">
                                    <a href="portfolio/background_socket_connect.html" target="_blank">
 
                                         <figure class="project-img">
@@ -960,14 +961,32 @@
                                              <img height="300" src="./assets/img/portfolio/background_socket_connect/logo.png" alt="background socket connect" loading="lazy">
                                         </figure>
 
-                                        <h3 class="project-title">background_socket_connect</h3>
+                                         <h3 class="project-title">background_socket_connect</h3>
 
-                                        <p class="project-category">Flutter package for persistent socket connections</p>
+                                         <p class="project-category">Flutter package for persistent socket connections</p>
 
-                                   </a>
-                              </li>
+                                    </a>
+                               </li>
 
-                              <li class="project-item  active" data-filter-item data-category="web development">
+                               <li class="project-item  active" data-filter-item data-category="plugins">
+                                    <a href="portfolio/mobile_phone_blocker.html" target="_blank">
+
+                                         <figure class="project-img">
+                                              <div class="project-item-icon-box">
+                                                   <ion-icon name="eye-outline"></ion-icon>
+                                              </div>
+
+                                              <img height="300" src="./assets/img/portfolio/mobile_phone_blocker/logo.png" alt="mobile phone blocker" loading="lazy">
+                                         </figure>
+
+                                         <h3 class="project-title">mobile_phone_blocker</h3>
+
+                                         <p class="project-category">Flutter plugin for device lockdown & security</p>
+
+                                    </a>
+                               </li>
+
+                              <li class="project-item  active" data-filter-item data-category="applications">
                                    <a href="portfolio/famelink.html" target="_blank">
 
                                         <figure class="project-img">
@@ -986,7 +1005,7 @@
                               </li>
 
 
-                              <li class="project-item  active" data-filter-item data-category="web development">
+                              <li class="project-item  active" data-filter-item data-category="applications">
                                    <a href="portfolio/esntls.html" target=”_blank”>
 
                                         <figure class="project-img">
@@ -1005,7 +1024,7 @@
                               </li>
 
 
-                              <li class="project-item  active" data-filter-item data-category="web development">
+                              <li class="project-item  active" data-filter-item data-category="applications">
                                    <a href="portfolio/tarevalpartner.html" target=”_blank”>
 
                                         <figure class="project-img">
@@ -1024,7 +1043,7 @@
                               </li>
 
 
-                              <li class="project-item  active" data-filter-item data-category="web development">
+                              <li class="project-item  active" data-filter-item data-category="applications">
                                    <a href="portfolio/baaz.html" target=”_blank”>
 
                                         <figure class="project-img">
@@ -1043,7 +1062,7 @@
                               </li>
 
 
-                              <li class="project-item  active" data-filter-item data-category="web development">
+                              <li class="project-item  active" data-filter-item data-category="applications">
                                    <a href="portfolio/stayat.html" target=”_blank”>
 
                                         <figure class="project-img">
@@ -1062,7 +1081,7 @@
                               </li>
 
 
-                              <li class="project-item  active" data-filter-item data-category="web development">
+                              <li class="project-item  active" data-filter-item data-category="applications">
                                    <a href="portfolio/ksf.html" target=”_blank”>
 
                                         <figure class="project-img">
@@ -1081,7 +1100,7 @@
                               </li>
 
 
-                              <li class="project-item  active" data-filter-item data-category="web development">
+                              <li class="project-item  active" data-filter-item data-category="applications">
                                    <a href="portfolio/rkdistributer.html" target=”_blank”>
 
                                         <figure class="project-img">
@@ -1099,7 +1118,7 @@
                                    </a>
                               </li>
 
-                              <li class="project-item  active" data-filter-item data-category="web development">
+                              <li class="project-item  active" data-filter-item data-category="applications">
                                    <a href="portfolio/buddha.html" target=”_blank”>
 
                                         <figure class="project-img">
@@ -1119,7 +1138,7 @@
 
 
 
-                              <li class="project-item  active" data-filter-item data-category="web development">
+                              <li class="project-item  active" data-filter-item data-category="applications">
                                    <a href="portfolio/livingroot.html" target=”_blank”>
 
                                         <figure class="project-img">
@@ -1139,7 +1158,7 @@
 
 
 
-                              <li class="project-item  active" data-filter-item data-category="web development">
+                              <li class="project-item  active" data-filter-item data-category="applications">
                                    <a href="portfolio/dranchal.html" target=”_blank”>
 
                                         <figure class="project-img">
@@ -1158,7 +1177,7 @@
                               </li>
 
 
-                              <li class="project-item  active" data-filter-item data-category="web development">
+                              <li class="project-item  active" data-filter-item data-category="applications">
                                    <a href="portfolio/chatpix.html" target=”_blank”>
 
                                         <figure class="project-img">
@@ -1177,7 +1196,7 @@
                               </li>
 
 
-                              <li class="project-item  active" data-filter-item data-category="web development">
+                              <li class="project-item  active" data-filter-item data-category="applications">
                                    <a href="portfolio/gallery.html" target=”_blank”>
 
                                         <figure class="project-img">
@@ -1204,7 +1223,7 @@
                               </li>
 
 
-                              <li class="project-item  active" data-filter-item data-category="web design">
+                              <li class="project-item  active" data-filter-item data-category="applications">
                                    <a href="portfolio/sporty.html" target=”_blank”>
 
                                         <figure class="project-img">
@@ -1279,7 +1298,7 @@
                                    </a>
                               </li> -->
 
-                              <li class="project-item  active" data-filter-item data-category="web design">
+                              <li class="project-item  active" data-filter-item data-category="applications">
                                    <a href="portfolio/invoice-maker.html" target=”_blank”>
 
                                         <figure class="project-img">
@@ -1298,7 +1317,7 @@
                                    </a>
                               </li>
 
-                              <li class="project-item  active" data-filter-item data-category="web design">
+                              <li class="project-item  active" data-filter-item data-category="applications">
                                    <a href="portfolio/medic-meditation.html" target=”_blank”>
 
                                         <figure class="project-img">

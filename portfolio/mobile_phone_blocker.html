@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Mobile Phone Blocker - Flutter Plugin</title>
+  <meta content="A Flutter plugin designed to lock and secure Android devices using DevicePolicyManager." name="description">
+  <meta content="Flutter, Plugin, Android, Security, Lockdown, Kiosk Mode, EMI Locker" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/portfolio/mobile_phone_blocker/logo.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style-folio.css" rel="stylesheet">
+
+  <style>
+    .documentation-section {
+      margin-top: 30px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .documentation-section h4 {
+      color: #72e2ae;
+      margin-bottom: 20px;
+      border-left: 4px solid #72e2ae;
+      padding-left: 15px;
+    }
+    pre {
+      background: #1e1e1e;
+      color: #d4d4d4;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    code {
+        color: #ce9178;
+    }
+    .alert-box {
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .alert-important {
+      background: rgba(255, 107, 107, 0.1);
+      border: 1px solid #ff6b6b;
+      color: #ff6b6b;
+    }
+    .alert-note {
+      background: rgba(72, 226, 174, 0.1);
+      border: 1px solid #48e2ae;
+      color: #48e2ae;
+    }
+    .feature-list {
+        list-style: none;
+        padding-left: 0;
+    }
+    .feature-list li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .feature-list li i {
+        color: #72e2ae;
+        margin-top: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Mobile Phone Blocker</h2>
+
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide text-center">
+                  <img src="../assets/img/portfolio/mobile_phone_blocker/logo.png" alt="Mobile Phone Blocker Icon" class="img-fluid rounded-4" style="max-height: 400px;">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="documentation-section">
+                <h4><b>🚀 Use Case / Purpose</b></h4>
+                <p>A Flutter plugin designed to lock and secure Android devices. It leverages Android <code>DevicePolicyManager</code> to restrict user actions, disable the status bar, and enter kiosk mode.</p>
+                <div class="alert-box alert-note">
+                    <i class="bi bi-info-circle-fill"></i>
+                    <div>
+                        <strong>Example scenario (EMI Financing):</strong><br>
+                        1. User buys phone on EMI.<br>
+                        2. Finance app installs EMI locker.<br>
+                        3. Device locks on missed payment.<br>
+                        4. Unlocks automatically after payment verification.
+                    </div>
+                </div>
+            </div>
+
+            <div class="documentation-section">
+                <h4><b>✨ Features</b></h4>
+                <ul class="feature-list">
+                    <li><i class="bi bi-check-circle-fill"></i> <strong>Lock Device</strong>: Secures the device, pins app, disables status bar, and hides settings. Prevents safe boot, app installation, and factory reset.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> <strong>Unlock Device</strong>: Removes restrictions and restores normal device operation.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> <strong>EMI Status Check</strong>: Includes <code>EmiService</code> to verify payment status before unlocking.</li>
+                </ul>
+            </div>
+
+            <div class="documentation-section">
+                <h4><b>⚙️ Setup</b></h4>
+                <div class="alert-box alert-important">
+                    <i class="bi bi-exclamation-triangle-fill"></i>
+                    <div><strong>IMPORTANT:</strong> For this plugin to work, the app MUST be set as the <strong>Device Owner</strong>. This requires a <strong>Factory Reset</strong> first.</div>
+                </div>
+                
+                <p><strong>Method 1: ADB Command</strong></p>
+                <pre>adb shell dpm set-device-owner your.application.id/com.emi.locker.MyDeviceAdminReceiver</pre>
+
+                <p><strong>Method 2: QR Code Provisioning</strong></p>
+                <p>Tap the "Welcome" screen 6 times to open the QR scanner and scan a payload like this:</p>
+                <pre>{
+  "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.emi.locker/.MyDeviceAdminReceiver",
+  "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://github.com/Amarj234/flutter_learn_advance/releases/download/apkupload/emi-locker.apk",
+  "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_CHECKSUM": "BASE64_SHA256_HERE",
+  "android.app.extra.PROVISIONING_SKIP_ENCRYPTION": true
+}</pre>
+            </div>
+
+            <div class="documentation-section">
+                <h4><b>💻 Usage</b></h4>
+                <p>Add to <code>pubspec.yaml</code>:</p>
+                <pre>dependencies:
+  mobile_phone_blocker: # latest</pre>
+                
+                <p>Dart implementation:</p>
+                <pre>// Lock the device
+await DeviceControl.lockDevice();
+
+// Unlock the device
+await DeviceControl.unlockDevice();</pre>
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 portfolio-info">
+            <ul>
+              <div class="row">
+                <li>
+                  <div class="row d-flex justify-content-start gap-2">
+                    <a href="https://pub.dev/packages/mobile_phone_blocker" target="_blank" class="download-btn android">
+                      <i class="bi bi-box-seam"></i> View on Pub.dev
+                    </a>
+                    <a href="https://www.linkedin.com/in/amarj234/" target="_blank" class="download-btn ios">
+                      <i class="bi bi-linkedin"></i> LinkedIn
+                    </a>
+                  </div>
+                </li>
+
+                &nbsp;
+                <li>
+                  <h4><b>👨‍💻 Project Info</b></h4>
+                  <p>🔹 <strong>Author:</strong> AmarJeet Kushwaha</p>
+                  <p>🔹 <strong>Category:</strong> Flutter Plugin / Security</p>
+                  <p>🔹 <strong>Platform:</strong> Android (Enterprise)</p>
+                  <p>🔹 <strong>Core Tech:</strong> Flutter, Kotlin, DevicePolicyManager</p>
+                </li>
+
+                <div class="documentation-section" style="margin-top: 10px; padding: 15px; background: rgba(114, 226, 174, 0.1);">
+                    <h5 style="color: #72e2ae;"><b>EmiService Example</b></h5>
+                    <pre style="font-size: 11px;">final emiService = EmiService();
+bool paid = await emiService.isEmiPaid();
+if (paid) {
+  await DeviceControl.unlockDevice();
+}</pre>
+                </div>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- End Portfolio Details -->
+
+  </main>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
