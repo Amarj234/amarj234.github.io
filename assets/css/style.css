@@ -2640,7 +2640,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .filter-item button.active {
-    color: var(--orange-yellow-crayola);
+    color: var(--smoky-black);
   }
 
   /* portfolio and blog grid */
