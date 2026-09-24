@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:play.google.com)",
+      "WebFetch(domain:web.pigeonchat.app)",
+      "Read(//private/tmp/**)",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120 Safari/537.36\" \"https://play.google.com/store/apps/details?id=pigeonchat.app&hl=en_IN\")",
+      "Bash(curl -sL \"https://play-lh.googleusercontent.com/a9GjXKlI3Q1RwNzigOFhfQTRfvxOnnDzyJYC9jqDcLDA7adcr_e-ebmm5EtXxu4xHXwTifUOpHjPkyX6a5siBws=s512\" -o assets/img/portfolio/pigeon/logo.png)",
+      "Bash(python3 -c \"import sys,re,html; t=sys.stdin.read\\(\\); m=re.search\\(r'data-g-id=\\\\\"description\\\\\".*?>\\(.*?\\)</div>', t, re.S\\); print\\(html.unescape\\(re.sub\\('<[^>]+>','\\\\n',m.group\\(1\\)\\)\\) if m else 'NOT FOUND'\\)\")"
+    ]
+  }
+}

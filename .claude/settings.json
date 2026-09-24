@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(open -a \"Google Chrome\" \"file:///Users/macbookair/Documents/amarj234.github.io/portfolio/pigeon.html\")",
+      "Bash(open -a \"Google Chrome\" \"file:///Users/macbookair/Documents/amarj234.github.io/index.html\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://amarj234.github.io/privacy/safeaura.html)"
+    ]
+  }
+}
