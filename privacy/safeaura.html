@@ -250,7 +250,7 @@
             <header>
                 <h1>Privacy Policy for SafeAura</h1>
                 <div class="title-underline"></div>
-                <p class="updated"><strong>Last updated:</strong> 18 September 2026</p>
+                <p class="updated"><strong>Last updated:</strong> 27 September 2026</p>
             </header>
 
             <p class="intro">SafeAura ("the App", "we", "us", or "our") is a parental-control and content-blocking
@@ -264,8 +264,13 @@
                 <ul>
                     <li>SafeAura performs its blocking <strong>on your device</strong>. Your blocklist, blocked apps and
                         parent PIN are stored <strong>locally</strong> on the device only.</li>
-                    <li>We (the developer) <strong>do not operate any server</strong> and <strong>do not collect, store,
+                    <li>We (the developer) <strong>do not run our own servers</strong> and <strong>do not collect, store,
                             sell, or share your personal data</strong>, browsing history, or DNS queries.</li>
+                    <li>The App uses <strong>Google Firebase</strong> only to receive <strong>push notifications</strong>
+                        (Firebase Cloud Messaging) and to download <strong>ad settings</strong> (Cloud Firestore). No
+                        blocklists, schedules, PINs or browsing data are sent to Firebase.</li>
+                    <li>Block <strong>schedules</strong> are stored and run <strong>on your device</strong> using Android
+                        alarms.</li>
                     <li>The App shows advertisements through <strong>Google AdMob</strong>, which collects certain data
                         as described below and in Google's own privacy policy.</li>
                     <li>The App uses a <strong>local VPN</strong> solely to filter DNS requests and block selected apps.
@@ -282,6 +287,8 @@
                 <ul>
                     <li><strong>Blocklist</strong> &ndash; the website domains you choose to block.</li>
                     <li><strong>Blocked apps</strong> &ndash; the list of apps you choose to block.</li>
+                    <li><strong>Block schedules</strong> &ndash; the days and times you set for blocking to turn on
+                        and off automatically.</li>
                     <li><strong>Parent PIN</strong> &ndash; used to protect settings and controls. It is stored locally
                         and is not sent anywhere.</li>
                     <li><strong>App preferences</strong> &ndash; such as your selected theme (light/dark) and language.
@@ -313,9 +320,20 @@
                     practices.</p>
             </section>
 
+                <h3>d) App block scheduler</h3>
+                <p>The scheduler lets you choose the days and times when blocking turns on and off automatically. To
+                    switch blocking on and off at exactly the time you chose, even when the device is idle, the App uses
+                    Android's <strong>exact alarm</strong> feature (<code>SCHEDULE_EXACT_ALARM</code>). After a restart,
+                    the App re-arms these alarms (<code>RECEIVE_BOOT_COMPLETED</code>). Schedules are stored and run
+                    <strong>only on your device</strong>. They are not sent to us or to any third party. The App
+                    does not use alarms to track you or to collect any information.</p>
+            </section>
+
             <section>
                 <h2>2. Advertising (Google AdMob)</h2>
-                <p>The App displays banner and interstitial ads using <strong>Google AdMob</strong>. To serve ads, the
+                <p>The App displays banner and interstitial ads using <strong>Google AdMob</strong>. Whether ads are shown
+                    and which ad units are used is controlled by settings the App downloads from Firebase (see Section 3).
+                    To serve ads, the
                     Google Mobile Ads SDK may collect and process information such as:</p>
                 <ul>
                     <li>Advertising identifier (Android Advertising ID / App Set ID)</li>
@@ -337,7 +355,49 @@
             </section>
 
             <section>
-                <h2>3. Permissions the App requests</h2>
+                <h2>3. Google Firebase (push notifications and ad configuration)</h2>
+                <p>The App uses two Google Firebase services. We do not use Firebase Analytics or Crashlytics, and we
+                    do not create user accounts.</p>
+
+                <h3>a) Firebase Cloud Messaging (push notifications)</h3>
+                <ul>
+                    <li>The App uses Firebase Cloud Messaging (FCM) to receive push notifications from us, such as
+                        app updates, new features and announcements.</li>
+                    <li>To deliver these notifications, Firebase creates a random <strong>messaging token</strong> and a
+                        <strong>Firebase installation ID</strong> for your copy of the App. These identifiers are not
+                        linked to your name, email, phone number or any other personal information.</li>
+                    <li>The App subscribes to one general topic that <strong>all users</strong> receive. We do not send
+                        targeted notifications to individual users, and we do not store your token on our own
+                        servers.</li>
+                    <li>On Android 13 and newer, the App asks for your permission before showing notifications. You can
+                        turn notifications off at any time in <strong>Settings &rarr; Apps &rarr; SafeAura &rarr;
+                            Notifications</strong>.</li>
+                </ul>
+
+                <h3>b) Cloud Firestore (ad configuration)</h3>
+                <ul>
+                    <li>The App downloads a small settings file from Cloud Firestore that controls advertising: whether
+                        ads are shown and which AdMob ad units to use.</li>
+                    <li>These settings are fetched <strong>at most once a day</strong> and cached on your device. The
+                        download is <strong>read-only</strong>. The App does <strong>not</strong> upload your blocklist,
+                        blocked apps, schedules, PIN, browsing history or any other personal data to Firestore.</li>
+                </ul>
+
+                <p>As with any internet request, Google receives technical information such as your IP address and
+                    basic device and app information when the App connects to Firebase. Google processes this data on
+                    our behalf as a service provider. For details, see:</p>
+                <ul>
+                    <li>Privacy and security in Firebase:
+                        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a>
+                    </li>
+                    <li>Google Privacy Policy:
+                        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>4. Permissions the App requests</h2>
                 <div class="table-scroll">
                     <table>
                         <thead>
@@ -357,11 +417,20 @@
                             </tr>
                             <tr>
                                 <td>Post notifications</td>
-                                <td>To show the ongoing "protection is on" notification required by Android</td>
+                                <td>To show the ongoing "protection is on" notification required by Android, and to
+                                    show push notifications (app updates and announcements)</td>
+                            </tr>
+                            <tr>
+                                <td>Schedule exact alarms (<code>SCHEDULE_EXACT_ALARM</code>)</td>
+                                <td>To turn blocking on and off at exactly the times you set in the App block scheduler</td>
+                            </tr>
+                            <tr>
+                                <td>Run at startup (<code>RECEIVE_BOOT_COMPLETED</code>)</td>
+                                <td>To re-arm your block schedules after the device restarts</td>
                             </tr>
                             <tr>
                                 <td>Internet / network state</td>
-                                <td>For DNS forwarding and to load advertisements</td>
+                                <td>For DNS forwarding, loading advertisements, receiving push notifications and downloading ad settings</td>
                             </tr>
                             <tr>
                                 <td>Package visibility (<code>&lt;queries&gt;</code>)</td>
@@ -375,11 +444,13 @@
             </section>
 
             <section>
-                <h2>4. Data sharing</h2>
+                <h2>5. Data sharing</h2>
                 <p>We do not sell or rent your information. Information is shared only in these limited ways, which are
                     inherent to how the App works:</p>
                 <ul>
                     <li><strong>Google AdMob</strong> &ndash; for showing advertisements (see Section 2).</li>
+                    <li><strong>Google Firebase</strong> &ndash; for push notifications and downloading ad settings
+                        (see Section 3).</li>
                     <li><strong>Public DNS (Google Public DNS)</strong> &ndash; allowed DNS requests are forwarded to
                         resolve domains so browsing works.</li>
                 </ul>
@@ -387,7 +458,7 @@
             </section>
 
             <section>
-                <h2>5. Children's privacy</h2>
+                <h2>6. Children's privacy</h2>
                 <p>SafeAura is a parental-control tool intended to be <strong>installed and configured by a parent or
                         guardian</strong>. It is not directed at children to create accounts or submit personal
                     information, and it does not knowingly collect personal information from children. The App does not
@@ -397,37 +468,41 @@
             </section>
 
             <section>
-                <h2>6. Data retention</h2>
-                <p>All data the App creates (blocklist, blocked apps, PIN, preferences) stays on your device until you
+                <h2>7. Data retention</h2>
+                <p>All data the App creates (blocklist, blocked apps, block schedules, PIN, preferences) stays on your device until you
                     remove it. Clearing the App's data or uninstalling the App permanently removes this information from
                     the device.</p>
             </section>
 
             <section>
-                <h2>7. Your choices and rights</h2>
+                <h2>8. Your choices and rights</h2>
                 <ul>
                     <li><strong>Turn off blocking</strong> at any time from within the App (protected by the parent PIN).
                     </li>
                     <li><strong>Delete your data</strong> by clearing the App's storage or uninstalling it.</li>
                     <li><strong>Control ad personalization</strong> via your device's Google Ads settings.</li>
+                    <li><strong>Turn off push notifications</strong> in your device's notification settings.</li>
+                    <li><strong>Revoke exact-alarm access</strong> in <strong>Settings &rarr; Apps &rarr; Special app
+                            access &rarr; Alarms &amp; reminders</strong>. Scheduled blocking may then not start or stop
+                        on time.</li>
                 </ul>
             </section>
 
             <section>
-                <h2>8. Security</h2>
+                <h2>9. Security</h2>
                 <p>Your data remains on your device. The parent PIN is stored using the device's secure storage. However,
                     no method of electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
             </section>
 
             <section>
-                <h2>9. Changes to this policy</h2>
+                <h2>10. Changes to this policy</h2>
                 <p>We may update this Privacy Policy from time to time. Changes will be reflected by updating the "Last
                     updated" date at the top of this document. Continued use of the App after changes take effect
                     constitutes acceptance of the revised policy.</p>
             </section>
 
             <section>
-                <h2>10. Contact us</h2>
+                <h2>11. Contact us</h2>
                 <p>If you have any questions about this Privacy Policy, contact us at:</p>
                 <div class="contact-box">
                     <p style="margin-bottom:0;"><strong>Email:</strong>
