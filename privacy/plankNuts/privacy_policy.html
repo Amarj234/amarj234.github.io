@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plank Nuts Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Plank Nuts mobile game.">
+<style>
+  :root {
+    --bg: #f7f3ec;
+    --card: #ffffff;
+    --ink: #1c2b3a;
+    --muted: #5b6b7e;
+    --accent: #e0574f;
+    --teal: #1f8f8f;
+    --rule: #e6ded0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1826;
+      --card: #16273b;
+      --ink: #f3ece0;
+      --muted: #a8b4c2;
+      --accent: #f2766f;
+      --teal: #4cc3c3;
+      --rule: #26405c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  header {
+    background: #16273b;
+    color: #fff6e6;
+    padding: 40px 16px 32px;
+    text-align: center;
+  }
+  header .badge {
+    display: inline-block;
+    background: #f2675f;
+    border-radius: 999px;
+    padding: 6px 22px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 22px;
+    box-shadow: 0 4px 0 #b8433d;
+  }
+  header p { margin: 14px 0 0; color: #c9d4e0; font-size: 14px; }
+  main {
+    max-width: 760px;
+    margin: -16px auto 48px;
+    background: var(--card);
+    border-radius: 18px;
+    padding: 28px 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  }
+  @media (max-width: 600px) {
+    main { margin: 0; border-radius: 0; padding: 22px 16px; }
+  }
+  h2 {
+    font-size: 19px;
+    margin: 30px 0 8px;
+    padding-top: 18px;
+    border-top: 1px solid var(--rule);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 8px; }
+  a { color: var(--teal); }
+  .summary {
+    background: color-mix(in srgb, var(--teal) 12%, transparent);
+    border-left: 4px solid var(--teal);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 8px;
+  }
+  .summary ul { margin: 6px 0 0; padding-left: 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 10px 0; }
+  th, td { text-align: left; vertical-align: top; padding: 9px 8px; border-bottom: 1px solid var(--rule); }
+  th { color: var(--muted); font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .table-wrap { overflow-x: auto; }
+  .muted { color: var(--muted); font-size: 14px; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; padding: 0 16px 40px; }
+</style>
+</head>
+<body>
+<header>
+  <span class="badge">PLANK NUTS</span>
+  <p>Privacy Policy &middot; Effective 4 October 2026</p>
+</header>
+
+<main>
+  <div class="summary">
+    <strong>In short:</strong>
+    <ul>
+      <li>We don't ask for your name, email, contacts, precise location or any account.</li>
+      <li>Your game progress stays on your device.</li>
+      <li>Levels and game content are downloaded from our Google Firebase (Cloud Firestore) server. This is read-only &mdash; we don't upload your progress.</li>
+      <li>If you allow notifications, we use Firebase Cloud Messaging and on-device reminders. You can turn them off at any time.</li>
+      <li>The free version shows ads from Google AdMob, which uses your device's advertising ID. You can limit this at any time.</li>
+      <li>We don't sell your personal information.</li>
+    </ul>
+  </div>
+
+  <h2>1. Who we are</h2>
+  <p>
+    Plank Nuts (package <code>com.plank.nuts</code>) is a puzzle game published by
+    <strong>Balliram</strong> ("we", "us"). If you have questions about this policy,
+    contact us at <a href="mailto:amarj234@gmail.com">amarj234@gmail.com</a>.
+  </p>
+
+  <h2>2. Information stored on your device</h2>
+  <p>
+    The game saves the following on your device so it can remember your progress: levels
+    unlocked, stars, coins, boosters, cosmetic items, daily-challenge streak, notification
+    preferences and settings (sound, vibration). This information is <strong>never sent to us</strong>.
+    It is deleted when you uninstall the app or clear its data.
+  </p>
+
+  <h2>3. Game content from Cloud Firestore</h2>
+  <p>
+    To give you new levels, events and game settings without an app update, the game downloads
+    content from <strong>Google Cloud Firestore</strong>, part of Google Firebase. The app only
+    <em>reads</em> this content; it does not upload your progress, scores or personal details to
+    Firestore. Downloaded content may be cached on your device so the game also works offline.
+  </p>
+  <p>
+    When your device connects to Firebase, Google necessarily receives technical information such
+    as your <strong>IP address</strong>, device and app information (OS version, app version) and
+    request timestamps. Google uses this to deliver the content, keep the service secure and
+    prevent abuse. We do not use it to identify you.
+  </p>
+
+  <h2>4. Notifications</h2>
+  <p><strong>Push notifications (Firebase Cloud Messaging).</strong>
+    We may send notifications about new levels, events, daily challenges or rewards using
+    <strong>Firebase Cloud Messaging (FCM)</strong>. To deliver them, FCM creates a
+    <strong>registration token</strong> (a random identifier for this app installation, linked to a
+    Firebase installation ID). This token is stored by Google Firebase on our behalf and is used
+    only to send notifications to your device. It does not contain your name, email or phone number.
+  </p>
+  <p><strong>Local notifications.</strong>
+    The game can also schedule reminders directly on your device (for example, "your daily
+    challenge is ready"). These are created and shown entirely on your device &mdash; no data is
+    sent to us or any third party to schedule them.
+  </p>
+  <p><strong>Your control.</strong>
+    On Android 13 and newer, the app asks for your permission before showing any
+    notifications. You can say no, and the game works exactly the same. You can change this at any
+    time in your device's <em>Settings &rsaquo; Apps &rsaquo; Plank Nuts &rsaquo; Notifications</em>
+    (or the in-game settings, where available). Notifications are never used to show ads.
+  </p>
+
+  <h2>5. Advertising (Google AdMob)</h2>
+  <p>
+    The game shows banner, full-screen and optional rewarded video ads from Google AdMob.
+    To serve and measure ads, and to prevent fraud, Google may collect and process:
+  </p>
+  <div class="table-wrap">
+    <table>
+      <tr><th>Data</th><th>Purpose</th></tr>
+      <tr><td>Android Advertising ID</td><td>Ad delivery, frequency capping, measurement, and personalised ads where you have consented</td></tr>
+      <tr><td>IP address and approximate location derived from it</td><td>Choosing ads suitable for your region, fraud prevention</td></tr>
+      <tr><td>Device and app information (model, OS version, language, app version)</td><td>Showing ads that work on your device, diagnostics</td></tr>
+      <tr><td>Ad interactions (views, taps, rewarded video completion)</td><td>Measurement, rewarding you, fraud prevention</td></tr>
+    </table>
+  </div>
+
+  <h2>6. Summary of data collected by the app</h2>
+  <div class="table-wrap">
+    <table>
+      <tr><th>Data</th><th>Service</th><th>Purpose</th><th>Shared / sold?</th></tr>
+      <tr><td>Advertising ID</td><td>Google AdMob</td><td>Advertising, analytics of ads, fraud prevention</td><td>Processed by Google; not sold by us</td></tr>
+      <tr><td>FCM registration token / Firebase installation ID</td><td>Firebase Cloud Messaging</td><td>Sending push notifications</td><td>Processed by Google; not sold</td></tr>
+      <tr><td>IP address, device &amp; app info</td><td>Firebase, AdMob</td><td>Delivering content and ads, security, fraud prevention</td><td>Processed by Google; not sold</td></tr>
+      <tr><td>Game progress &amp; settings</td><td>On device only</td><td>Saving your progress</td><td>Never leaves your device</td></tr>
+    </table>
+  </div>
+  <p>
+    All data sent over the network is <strong>encrypted in transit</strong> (HTTPS/TLS).
+    Google acts as our service provider (data processor) for Firebase. Google's handling of data is
+    described in the
+    <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>,
+    <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacy and Security in Firebase</a> and
+    <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from sites or apps that use its services</a>.
+  </p>
+
+  <h2>7. Your choices and consent</h2>
+  <ul>
+    <li>
+      <strong>EEA, UK and Switzerland:</strong> the first time you open the game you will see a consent
+      message from Google's User Messaging Platform. You can change your choice at any time with the
+      privacy button on the home screen.
+    </li>
+    <li>
+      <strong>Android:</strong> you can reset or delete your advertising ID, or opt out of personalised
+      ads, in <em>Settings &rsaquo; Privacy &rsaquo; Ads</em> (the exact path depends on your device).
+    </li>
+    <li><strong>Notifications:</strong> turn them off at any time in your device settings (see section 4).</li>
+    <li>Watching rewarded videos is always optional.</li>
+  </ul>
+
+  <h2>8. Other services</h2>
+  <p>
+    The game board is drawn with the Unity game engine. We have not turned on Unity Analytics,
+    Unity Ads or any other Unity data service. We do not use Firebase Analytics, Crashlytics or
+    Firebase Authentication. The app has no sign-in, no social features and no in-app purchases.
+  </p>
+
+  <h2>9. Children</h2>
+  <p>
+    Plank Nuts is meant for a general audience and is not directed at children under 13. We don't
+    knowingly collect personal information from children. If you believe a child has provided
+    personal information through the app, contact us and we will help remove it.
+  </p>
+
+  <h2>10. Data retention and deletion</h2>
+  <ul>
+    <li><strong>Game data</strong> stays on your device until you uninstall the app or clear its data.</li>
+    <li><strong>FCM registration tokens</strong> stop working when you uninstall the app, clear its data
+      or turn off notifications, and are removed by Firebase after a period of inactivity (Google
+      currently treats tokens inactive for 270 days as expired).</li>
+    <li><strong>Firestore content</strong> is game content only and contains no personal data about you.</li>
+    <li><strong>Advertising data</strong> is kept by Google according to its retention policies.</li>
+  </ul>
+  <p>
+    <strong>Request deletion:</strong> email <a href="mailto:amarj234@gmail.com">amarj234@gmail.com</a> with the
+    subject "Plank Nuts data deletion". Because we don't have an account system, the simplest way to
+    remove all app data is to uninstall the app. We will answer any deletion request within 30 days.
+  </p>
+
+  <h2>11. Your rights</h2>
+  <p>
+    Depending on where you live (for example under the GDPR, UK GDPR, India's DPDP Act or CCPA/CPRA),
+    you may have the right to access, correct, delete or object to the processing of personal
+    information, to withdraw consent, and to opt out of the "sale" or "sharing" of personal information
+    for targeted advertising. Because we don't hold your personal data ourselves, the fastest way to
+    use these rights is through the choices in sections 4 and 7 and Google's tools. You can also
+    contact us and we'll help. Data may be processed by Google on servers outside your country, under
+    Google's standard safeguards.
+  </p>
+
+  <h2>12. Changes to this policy</h2>
+  <p>
+    If we change this policy, we'll update the date at the top of this page. Big changes will also
+    be mentioned in the app's release notes.
+  </p>
+
+  <h2>13. Contact</h2>
+  <p>
+    Balliram<br>
+    Email: <a href="mailto:amarj234@gmail.com">amarj234@gmail.com</a>
+  </p>
+  <p class="muted">This policy applies to the Plank Nuts app for Android, distributed on Google Play.</p>
+</main>
+
+<footer>&copy; 2026 Balliram. All rights reserved.</footer>
+</body>
+</html>
