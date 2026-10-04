@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>X War Privacy Policy</title>
+<meta name="description" content="Privacy policy for the X War mobile game.">
+<style>
+  :root {
+    --bg: #ffffff; --text: #1d1b26; --muted: #5b5870; --accent: #6a28e0; --card: #f5f2fc; --line: #e3ddf3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #14101f; --text: #ece9f6; --muted: #a9a4bf; --accent: #b48cff; --card: #1f1930; --line: #322a48; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 36px 0 8px; color: var(--accent); }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); }
+  .summary { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin: 24px 0; }
+  .summary ul { margin: 8px 0 0; padding-left: 20px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  a { color: var(--accent); }
+  @media (max-width: 520px) { table, thead, tbody, tr, th, td { display: block; } thead { display: none; }
+    td { border: none; padding: 4px 0; } tr { border-bottom: 1px solid var(--line); padding: 8px 0; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>X War Privacy Policy</h1>
+  <p class="muted">Effective date: October 4, 2026</p>
+
+  <p>
+    This policy explains what information the X War mobile game ("X War", "the app") collects, how it is used
+    and the choices you have. X War is published by Balliram
+    ("we", "us").
+  </p>
+
+  <div class="summary">
+    <strong>In short</strong>
+    <ul>
+      <li>X War does not require an account and we do not collect your name, email or contacts.</li>
+      <li>Your game progress is saved only on your device.</li>
+      <li>The free version shows ads from Google AdMob, which may use your device's advertising ID.</li>
+      <li>Where the law requires it (for example in the EEA and UK), we ask for your consent before showing personalised ads.</li>
+      <li>The app uses Google Firebase to load ad settings (Cloud Firestore) and to send push notifications (Firebase Cloud Messaging).</li>
+      <li>Notifications are optional; you can turn them off at any time in your device settings.</li>
+    </ul>
+  </div>
+
+  <h2>1. Information stored on your device</h2>
+  <p>
+    The app saves your game progress (levels, cards, currencies, settings and daily reward status) locally on
+    your device. This data is not sent to us and we cannot see it. It is deleted when you uninstall the app, or
+    you can erase it at any time with <em>League &rarr; Reset progress</em>.
+  </p>
+
+  <h2>2. Advertising</h2>
+  <p>
+    X War is free to play and supported by ads served by Google AdMob, including banner ads, ads between
+    battles and optional rewarded videos (for example to revive your squad or double your coins). To deliver,
+    measure and limit the frequency of ads and to prevent fraud, Google may collect and process:
+  </p>
+  <table>
+    <thead><tr><th>Data</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td>Device identifiers, such as the Android advertising ID or iOS IDFA</td><td>Advertising, ad measurement, fraud prevention</td></tr>
+      <tr><td>Approximate location derived from your IP address</td><td>Showing ads relevant to your region</td></tr>
+      <tr><td>App interactions with ads (views, taps) and diagnostics</td><td>Ad delivery, analytics, fraud prevention</td></tr>
+      <tr><td>Device information (model, OS version, language)</td><td>Ad delivery and compatibility</td></tr>
+    </tbody>
+  </table>
+  <p>
+    How Google uses this information is described in
+    <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from sites or apps that use its services</a>
+    and the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.
+  </p>
+  <p>
+    <strong>Your choices.</strong> If you are in a region where consent is required, the app shows Google's consent
+    form before ads are loaded, and you can choose not to receive personalised ads. You can also reset or delete
+    your advertising ID in your device settings (Android: <em>Settings &rarr; Privacy &rarr; Ads</em>; iOS:
+    <em>Settings &rarr; Privacy &amp; Security &rarr; Tracking</em>). Opting out does not remove ads; they will be
+    less personalised.
+  </p>
+
+  <h2>3. Google Firebase services</h2>
+  <p>
+    X War uses the following services from Google Firebase, provided by Google LLC. Firebase does not receive your
+    name, email address or any other information that directly identifies you from the app.
+  </p>
+  <table>
+    <thead><tr><th>Service</th><th>What it does</th><th>Data processed</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Cloud Firestore</td>
+        <td>Loads app configuration from our server, such as which ads are shown, ad placement and frequency settings.
+          The app only reads this configuration; it does not upload your game data to Firestore.</td>
+        <td>IP address, device and app information (such as OS and app version) that is necessarily included in the network request</td>
+      </tr>
+      <tr>
+        <td>Firebase Cloud Messaging (FCM)</td>
+        <td>Delivers push notifications, such as game news, events, rewards and update reminders. Notifications are
+          broadcast to all players at once; we do not send messages to individual users.</td>
+        <td>Firebase generates a messaging token on your device so that Google can deliver notifications to it. We do not
+          collect, store or receive this token, and it is not linked to your identity.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    Firebase processes this data on Google's servers, which may be located outside your country. For details see
+    <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacy and Security in Firebase</a> and the
+    <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.
+  </p>
+
+  <h2>4. Notifications</h2>
+  <p>
+    X War can show two kinds of notifications:
+  </p>
+  <ul>
+    <li><strong>Push notifications</strong>, sent through Firebase Cloud Messaging as described in section 3.</li>
+    <li><strong>Local notifications</strong>, scheduled and shown entirely on your device (for example to remind you
+      that a daily reward is ready). Local notifications do not send any data off your device.</li>
+  </ul>
+  <p>
+    On Android 13 and later and on iOS, the app asks for your permission before showing notifications. You can allow
+    or turn off notifications at any time in your device settings (Android: <em>Settings &rarr; Apps &rarr; X War
+    &rarr; Notifications</em>; iOS: <em>Settings &rarr; Notifications &rarr; X War</em>). Turning notifications off
+    does not affect gameplay. Uninstalling the app also stops all notifications.
+  </p>
+
+  <h2>5. App updates</h2>
+  <p>
+    On Android, the app uses Google Play's in-app update service to tell you when a new version is available.
+    This check is handled by Google Play; we do not receive any personal information from it.
+  </p>
+
+  <h2>6. Information we do not collect</h2>
+  <p>
+    We do not collect your name, email address, phone number, contacts, photos, precise location, payment details
+    or messages. The app has no chat and no public profiles. Opponent names shown in the game are computer
+    generated.
+  </p>
+
+  <h2>7. Sharing</h2>
+  <p>
+    We do not sell your personal information. Data used for advertising, app configuration and notifications is
+    processed by Google (AdMob and Firebase) as our service provider, as described in sections 2 and 3. We may disclose information if required by law.
+  </p>
+
+  <h2>8. Data retention and deletion</h2>
+  <p>
+    Game data stays on your device until you reset your progress or uninstall the app. Data processed by Google for
+    advertising and by Firebase is retained according to Google's and Firebase's policies. To request deletion of any data associated with you,
+    contact us at the address below.
+  </p>
+
+  <h2>9. Children</h2>
+  <p>
+    X War is not directed at children under 13, and we do not knowingly collect personal information from them.
+    If you believe a child has provided personal information through the app, please contact us and we will help
+    remove it.
+  </p>
+
+  <h2>10. Security</h2>
+  <p>
+    Because your game progress stays on your device, it is protected by your device's own security. Communication with
+    Google's ad, Firebase and update services is encrypted in transit (HTTPS/TLS).
+  </p>
+
+  <h2>11. Your rights</h2>
+  <p>
+    Depending on where you live (for example under the GDPR in the EEA/UK or the CCPA in California), you may have the
+    right to access, correct, delete or restrict the processing of your personal information and to withdraw consent.
+    To exercise these rights, contact us.
+  </p>
+
+  <h2>12. Changes to this policy</h2>
+  <p>
+    We may update this policy from time to time. The latest version will always be available at this page, with
+    the effective date shown at the top.
+  </p>
+
+  <h2>13. Contact</h2>
+  <p>
+    Balliram<br>
+    Email: <a href="mailto:amarj234@gmail.com">amarj234@gmail.com</a>
+  </p>
+</main>
+</body>
+</html>
