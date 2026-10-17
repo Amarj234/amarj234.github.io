@@ -80,12 +80,12 @@
 <main>
 <div class="card">
 
-<p class="muted">Effective date: 26 September 2026</p>
+<p class="muted">Effective date: 26 September 2026 · Last updated: 17 October 2026</p>
 
 <p>This Privacy Policy explains how the mobile game <strong>KnotSolve Rope Puzzle</strong> (the “App”), published by <strong>Balliram</strong> (“we”, “us”), handles information when you use it. We built the App to collect as little information as possible: you can play without creating an account, and we never ask for your name, email address, phone number or contacts.</p>
 
 <h2>1. Information stored only on your device</h2>
-<p>Your game progress is saved on your own device and is <strong>not sent to us</strong>. This includes your current level, stars, coins, lives, boosters, daily gift and lucky spin status, and your sound and vibration settings. Uninstalling the App or clearing its data deletes this information.</p>
+<p>Your game progress is saved on your own device. This includes your current level, stars, coins, lives, boosters, daily gift, daily goals and lucky spin status, and your sound, vibration and daily reminder settings. Uninstalling the App or clearing its data deletes this information. Anonymous usage statistics, such as which levels are started and finished, are sent to Google Analytics for Firebase as described in section 2.</p>
 
 <h2>2. Information processed by third-party services</h2>
 <p>The App uses services provided by Google. These services may collect and process information automatically, as described below and in Google’s own privacy policies. We do not sell your personal information.</p>
@@ -103,6 +103,9 @@
 <h3>Firebase Cloud Messaging (notifications)</h3>
 <p>If you allow notifications, the App uses Firebase Cloud Messaging to send you occasional game news, such as reminders about your daily gift. Firebase assigns your device a registration token and processes it, together with basic device information, to deliver notifications. You can turn notifications off at any time in your device settings.</p>
 
+<h3>Google Analytics for Firebase (usage statistics)</h3>
+<p>After you agree to this policy, the App sends anonymous gameplay events (for example, level started or finished, and stars earned) and basic device and app information to Google Analytics for Firebase, linked to a random app-instance ID and, where allowed, your advertising ID. We use this to understand how the game is played, to improve it, and to measure our ad campaigns. It never includes your name, email address or contacts.</p>
+
 <h3>Cloud Firestore (game settings)</h3>
 <p>When it starts, the App reads a small settings file from Google Cloud Firestore (for example, whether ads are enabled). The App does not store any information about you in Firestore; as with any internet request, Google receives your IP address and technical information needed to answer the request.</p>
 
@@ -114,7 +117,9 @@
   <tr><th>Data</th><th>Collected by</th><th>Purpose</th><th>Optional?</th></tr>
   <tr><td>Game progress and settings</td><td>Stays on your device</td><td>Saving your game</td><td>Needed to play</td></tr>
   <tr><td>Advertising ID, IP address, device info, ad interactions</td><td>Google AdMob</td><td>Showing and measuring ads, fraud prevention</td><td>Personalisation needs consent where required; can be reset or deleted in device settings</td></tr>
+  <tr><td>Daily reminders</td><td>Scheduled and shown on your device (nothing is sent)</td><td>Reminding you of your daily gift, daily goals and next level</td><td>Yes: <em>Settings → Daily reminders</em> or device settings</td></tr>
   <tr><td>Notification token, device info</td><td>Firebase Cloud Messaging</td><td>Sending notifications</td><td>Yes: allow or deny notifications</td></tr>
+  <tr><td>Gameplay events, app-instance ID, device info, advertising ID</td><td>Google Analytics for Firebase</td><td>Understanding gameplay, improving the game, measuring ad campaigns</td><td>Starts only after you agree to this policy; advertising ID can be reset or deleted in device settings</td></tr>
   <tr><td>IP address, technical request data</td><td>Google Cloud Firestore</td><td>Loading game settings</td><td>Needed for ads to work</td></tr>
 </table>
 </div>
@@ -124,15 +129,18 @@
 <ul>
   <li><strong>Ad consent:</strong> if you are in the EEA, UK or Switzerland, the App shows Google’s consent message before personalised ads are used. You can review or change your choice at any time in <em>Settings → Ad Privacy Options</em> inside the App.</li>
   <li><strong>Advertising ID:</strong> you can reset or delete your advertising ID, or opt out of personalised ads, in your device settings (on most Android devices: <em>Settings → Google → Ads</em> or <em>Settings → Privacy → Ads</em>).</li>
-  <li><strong>Notifications:</strong> allow or block them when asked, or later in your device settings.</li>
+  <li><strong>Notifications:</strong> allow or block them when asked, or later in your device settings. Daily reminders can also be turned off in <em>Settings → Daily reminders</em> inside the App.</li>
   <li><strong>Game data:</strong> use <em>Settings → Reset Progress</em> in the App, or uninstall the App, to delete it.</li>
 </ul>
 
-<h2>5. Permissions the App uses</h2>
+<h2>5. Notifications and permissions</h2>
+<p><strong>Daily reminders.</strong> If you allow notifications, the App shows up to five reminders a day (for example when your daily gift is ready, how your daily goals are going, or which level is next), and a few “come back” reminders if you haven’t played for some days. They are scheduled and shown by your device, using the progress saved on it. No push notification service is used for them, and nothing about the reminders is sent to us, to Google or to anyone else. You can turn them off at any time in <em>Settings → Daily reminders</em> or in your device’s notification settings.</p>
+<p>The App uses these permissions:</p>
 <ul>
   <li><strong>Internet and network state:</strong> to load ads, game settings and notifications.</li>
-  <li><strong>Notifications:</strong> to show game notifications (Android asks for your permission first).</li>
-  <li><strong>Vibration:</strong> for optional haptic feedback while playing.</li>
+  <li><strong>Notifications:</strong> to show game news and the daily reminders (Android 13 and later ask for your permission first; on iOS the App asks before showing any notification).</li>
+  <li><strong>Run at startup:</strong> so reminders that are already scheduled are restored after your device restarts.</li>
+  <li><strong>Vibration:</strong> for optional haptic feedback while playing and for the reminders.</li>
   <li><strong>Advertising ID and ad services:</strong> used by Google AdMob as described above.</li>
 </ul>
 <p>The App does not use your camera, microphone, contacts, storage or precise location.</p>
@@ -147,7 +155,7 @@
 <p>Depending on where you live (for example under the GDPR in Europe or the CCPA/CPRA in California), you may have rights to access, correct, delete or restrict the use of your personal information, and to object to its processing. Because we do not keep personal information on our own servers, most requests are handled directly by Google through the links above. You can also contact us and we will help.</p>
 
 <h2>9. Changes to this policy</h2>
-<p>We may update this Privacy Policy from time to time. The new version will be posted on this page with a new effective date. Please check it occasionally.</p>
+<p>We may update this Privacy Policy from time to time. The new version will be posted on this page with a new effective date, and the App will ask you to agree to it before you continue playing.</p>
 
 <h2>10. Contact us</h2>
 <p>If you have any questions about this Privacy Policy or the App, contact us at:<br>
@@ -155,7 +163,7 @@
 Email: <a href="mailto:amarj234@gmail.com">amarj234@gmail.com</a></p>
 
 </div>
-<footer>© 2026 Balliram · KnotSolve Rope Puzzle</footer>
+<footer>© 2026 Balliram · KnotSolve Rope Puzzle · <a href="terms.html">Terms of Use</a></footer>
 </main>
 </body>
 </html>
