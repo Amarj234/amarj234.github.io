@@ -1,128 +1,156 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy – Brain Tap: Arrow Exit</title>
-<meta name="description" content="Privacy policy for the Brain Tap: Arrow Exit mobile game.">
+<meta name="description" content="Privacy Policy of the Brain Tap: Arrow Exit game.">
 <style>
   :root {
-    --ink: #1f2544; --muted: #5d6385; --accent: #4f6fe8; --bg: #ffffff;
-    --panel: #f3f5fc; --line: #e2e6f3;
+    --bg: #eceefc;
+    --card: #ffffff;
+    --ink: #2f3147;
+    --muted: #5f6280;
+    --blue: #2266e3;
+    --line: #d9dcf3;
+    --yellow: #ffd84a;
   }
   @media (prefers-color-scheme: dark) {
-    :root { --ink: #e9ebf7; --muted: #a9aecb; --accent: #8ea3ff; --bg: #12152b; --panel: #1b1f3b; --line: #2a2f55; }
+    :root {
+      --bg: #151726;
+      --card: #1f2235;
+      --ink: #e8e9f5;
+      --muted: #a9acc7;
+      --blue: #6fa4ff;
+      --line: #33374f;
+    }
   }
   * { box-sizing: border-box; }
   body {
-    margin: 0; background: var(--bg); color: var(--ink);
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
     font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
-  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 64px; }
-  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
-  h2 { font-size: 20px; margin: 36px 0 8px; padding-top: 8px; border-top: 1px solid var(--line); }
-  h3 { font-size: 16px; margin: 20px 0 4px; }
-  p, li { color: var(--ink); }
-  .meta { color: var(--muted); margin: 0 0 24px; }
-  .summary { background: var(--panel); border-radius: 14px; padding: 16px 20px; }
-  .summary ul { margin: 6px 0 0; padding-left: 20px; }
-  a { color: var(--accent); }
-  table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 15px; }
-  th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
-  th { color: var(--muted); font-weight: 600; }
-  @media (max-width: 560px) {
-    table, thead, tbody, tr, th, td { display: block; }
-    thead { display: none; }
-    tr { border-bottom: 1px solid var(--line); padding: 8px 0; }
-    td { border: 0; padding: 2px 0; }
-    td::before { content: attr(data-label) ": "; color: var(--muted); font-weight: 600; }
+  header {
+    background: linear-gradient(135deg, #4f6fe8, #9b6cf2);
+    color: #fff;
+    padding: 40px 16px 34px;
+    text-align: center;
   }
+  header h1 { margin: 0; font-size: clamp(1.5rem, 6vw, 2rem); letter-spacing: .5px; }
+  header h1 span { color: var(--yellow); }
+  header p { margin: 6px 0 0; color: rgba(255,255,255,.9); }
+  main { max-width: 820px; margin: -18px auto 40px; padding: 0 16px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 26px 26px 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,.06);
+  }
+  h2 { color: var(--blue); font-size: 1.25rem; margin: 30px 0 8px; }
+  h2:first-child { margin-top: 0; }
+  h3 { font-size: 1.05rem; margin: 18px 0 4px; }
+  p, li { color: var(--ink); }
+  .muted { color: var(--muted); }
+  ul { padding-left: 22px; }
+  a { color: var(--blue); }
+  .table-wrap { overflow-x: auto; margin: 10px 0 16px; }
+  table { width: 100%; min-width: 520px; border-collapse: collapse; font-size: .95rem; }
+  body { overflow-wrap: break-word; }
+  th, td { text-align: left; vertical-align: top; padding: 9px 10px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  .note {
+    background: rgba(34,102,227,.08);
+    border-left: 4px solid var(--blue);
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin: 14px 0;
+  }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; margin: 26px 0 40px; }
+
 </style>
 </head>
 <body>
+<header>
+  <h1><span>Brain Tap</span>: Arrow Exit</h1>
+  <p>Privacy Policy</p>
+</header>
+
 <main>
-  <h1>Privacy Policy</h1>
-  <p class="meta">Brain Tap: Arrow Exit (Android package <code>braintop.arrow.exit</code>)<br>
-     Effective date: 27 September 2026</p>
+<div class="card">
 
-  <div class="summary">
-    <strong>In short</strong>
-    <ul>
-      <li>You don't need an account. We don't ask for your name, email, contacts, photos or precise location.</li>
-      <li>Your game progress (levels, stars, coins, boosters and settings) is saved only on your device.</li>
-      <li>The game shows ads from Google AdMob. Google may use your device's advertising ID and similar data to show and measure ads.</li>
-      <li>If you allow notifications, Firebase Cloud Messaging uses a device token to deliver them.</li>
-    </ul>
-  </div>
+<p class="muted">Effective date: 5 October 2026 · Last updated: 21 October 2026</p>
+<p>This Privacy Policy explains how Brain Tap: Arrow Exit (the "game", "we", "us"), published by Balliram, handles information when you use it. You don't need an account, and we never ask for your name, email address, phone number, contacts, photos or precise location.</p>
+<h2>1. Information stored only on your device</h2>
+<p>The game saves your unlocked levels, stars, coins, hints and erasers, your stats (levels cleared, perfect clears, best daily streak), daily reward and spin timers, your daily goals progress, and your settings (music, sound effects, vibration, daily reminders on or off) in the app's local storage on your device. This information is not sent to us. Settings → Reset progress deletes it, and uninstalling the game deletes it too.</p>
+<h2>2. Information processed by third-party services</h2>
+<p>The game uses the services below. They are provided by Google, process data under their own privacy policies, and start only after you agree to these terms.</p>
+<p><strong>Google AdMob (advertising):</strong> shows banner, native, interstitial and optional rewarded video ads, measures them and prevents fraud. AdMob may process:</p>
+<ul>
+  <li>your device's advertising ID;</li>
+  <li>IP address, which may be used to estimate an approximate location;</li>
+  <li>device model, operating system, language and app information;</li>
+  <li>ad interactions (such as views and taps), and crash and diagnostic data about ads.</li>
+</ul>
+<p>Ads may be personalised where the law allows and, in the EEA, the UK and Switzerland, only with your consent.</p>
+<p><strong>Firebase Cloud Messaging (notifications):</strong> uses a device registration token and a Firebase installation identifier to deliver notifications about rewards and new content. If you allow notifications, your device is subscribed to a general news topic; a notification may open a screen of the game (such as the shop or the daily reward) when tapped.</p>
+<p><strong>Cloud Firestore (game settings):</strong> the game downloads its ad settings. It only reads them and does not store any information about you in Firestore; Google receives standard connection data such as your IP address.</p>
+<p>The game does not use analytics or crash-reporting SDKs, and it has no user accounts.</p>
+<p><strong>More:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a> and <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>.</p>
+<h2>3. What we do not collect</h2>
+<p>We do not collect your name, email address, phone number, contacts, photos, files, or precise location.</p>
+<h2>4. In-app purchases</h2>
+<p>The game offers optional in-app purchases handled entirely by Google Play (Android) or the App Store (iOS). The app itself never receives or stores your payment information, card details, or billing address. Purchases available:</p>
+<ul>
+  <li><strong>Remove Ads</strong> (non-consumable, one-time): removes all ads and unlocks unlimited offline play.</li>
+  <li><strong>Coins Pack</strong> (consumable): grants 500 in-game coins. Coins can also be earned by clearing levels, daily rewards, and the daily spin.</li>
+</ul>
+<p>Prices vary by region and are shown in the store before purchase. You can manage or cancel subscriptions and view purchase history in your Google Play or App Store account. Purchase state (whether you own "Remove Ads" or your coin balance) is saved locally on your device and restored when you reinstall the game on the same account.</p>
+<div class="note">
+  <strong>Payment processing:</strong> Google and Apple process all payments. Their privacy policies apply to payment data: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a> / <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>.
+</div>
+<h2>5. What we do not collect (updated)</h2>
+<p>We do not collect your name, email address, phone number, contacts, photos, files, precise location, or payment information.</p>
+<h2>6. Advertising and your choices</h2>
+<ul>
+  <li><strong>Consent:</strong> in the EEA, the UK or Switzerland, the game shows Google's consent form before it serves ads. Change your choice any time in Settings → Ad privacy choices.</li>
+  <li><strong>Personalised ads:</strong> reset or delete your advertising ID, or opt out of ad personalisation, in your device settings (on Android: Settings → Google → Ads, or Settings → Privacy → Ads).</li>
+  <li>Rewarded videos are optional. You never have to watch one to keep playing; hints, erasers, extra spins, continues and level skips can also be earned or bought with in-game coins.</li>
+  <li><strong>Notifications:</strong> on Android 13 and later, and on iOS, the game asks before sending notifications. Turn them off any time in your device's app settings; daily reminders can also be turned off in Settings → Daily reminders.</li>
+  <li><strong>Game data:</strong> delete it with Settings → Reset progress, or by uninstalling the game.</li>
+</ul>
+<h2>7. Notifications and permissions</h2>
+<p><strong>Daily reminders:</strong> If you allow notifications, the game shows up to five reminders a day (for example when your daily gift or free spin is ready, how your daily goals are going, or which level is next), and a few "come back" reminders if you haven't played for some days. They are scheduled and shown by your device from the progress saved on it. They don't use Firebase Cloud Messaging, and nothing about them is sent to us, to Google or to anyone else. Turn them off any time in Settings → Daily reminders or in your device's notification settings.</p>
+<p>On Android the game requests:</p>
+<ul>
+  <li>internet and network-state access, to load ads and settings;</li>
+  <li>notifications (Android 13 and later ask you first), for notifications about rewards and new content and for the daily reminders;</li>
+  <li>run at startup, so reminders that are already scheduled are restored after your device restarts;</li>
+  <li>vibration, used by the game's haptic feedback (can be turned off in Settings) and by the reminders;</li>
+  <li>the advertising ID permission, which is added by the Google Mobile Ads SDK.</li>
+</ul>
+<p>On iOS, the game asks for permission before showing any notification. The game does not request access to your location, camera, microphone, contacts or files.</p>
+<h2>8. Children</h2>
+<p>The game is not directed at children under 13, and we do not knowingly collect personal information from children. If you believe a child has provided personal information through the game, please contact us and we will help remove it.</p>
+<h2>9. Data retention and security</h2>
+<p>We do not keep personal data on our own servers. Data processed by Google services is kept according to Google's policies. Data sent between the game and these services is encrypted in transit using HTTPS/TLS.</p>
+<h2>10. Your rights</h2>
+<p>Depending on where you live (for example under the GDPR in Europe or the CCPA/CPRA in California), you may have the right to access or delete your personal data, object to or restrict its processing, and withdraw your consent. Because the game has no accounts and does not store your data on our servers, you can:</p>
+<ul>
+  <li>delete the progress saved on your device with Reset progress or by uninstalling the game;</li>
+  <li>manage ad consent in Settings → Ad privacy choices and in your device's ad settings;</li>
+  <li>contact us at <a href="mailto:amarj234@gmail.com">amarj234@gmail.com</a> with any request. We will reply within 30 days.</li>
+</ul>
+<p>We do not sell your personal information for money. Sharing data with Google for advertising, as described above, may count as "sharing" under some laws; you can limit it using the choices in section 6.</p>
+<h2>11. Changes to this policy</h2>
+<p>We may update this policy from time to time. When we do, we will post the new version with a new effective date, and the game will ask you to agree to it before you continue playing.</p>
+<h2>12. Contact</h2>
+<p>Balliram · <a href="mailto:amarj234@gmail.com">amarj234@gmail.com</a></p>
 
-  <h2>1. Who we are</h2>
-  <p>Brain Tap: Arrow Exit ("the game", "we", "us") is published by NXTL Solutions. If you have any questions about this policy or your data, contact us at
-    <a href="mailto:amarj234@gmail.com">amarj234@gmail.com</a>.</p>
-
-  <h2>2. Information stored on your device</h2>
-  <p>The game saves your unlocked levels, stars, coins, hints and erasers, daily reward and spin timers, and settings (music, sound effects, vibration) in the app's local storage on your device. This information is not sent to us. It is deleted when you uninstall the game or choose <em>Settings → Reset progress</em>.</p>
-
-  <h2>3. Information collected by third-party services</h2>
-  <p>The game uses the services below. They are provided by Google and process data under their own privacy policies.</p>
-  <table>
-    <thead><tr><th>Service</th><th>What it's used for</th><th>Data it may process</th></tr></thead>
-    <tbody>
-      <tr>
-        <td data-label="Service">Google AdMob</td>
-        <td data-label="Purpose">Showing banner, native, interstitial and rewarded video ads, measuring ads, and preventing fraud</td>
-        <td data-label="Data">Advertising ID, IP address (which may be used to estimate approximate location), device model, operating system and language, app information, and ad interactions (such as views and taps), plus crash and diagnostic data about ads</td>
-      </tr>
-      <tr>
-        <td data-label="Service">Firebase Cloud Messaging</td>
-        <td data-label="Purpose">Delivering notifications about rewards and new content, if you allow them</td>
-        <td data-label="Data">A device registration token and Firebase installation identifier</td>
-      </tr>
-      <tr>
-        <td data-label="Service">Cloud Firestore (Firebase)</td>
-        <td data-label="Purpose">Downloading the game's ad settings</td>
-        <td data-label="Data">Standard connection data such as IP address. The game only reads settings. It does not store any information about you in Firestore.</td>
-      </tr>
-    </tbody>
-  </table>
-  <p>Learn more:
-    <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a>,
-    <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, and
-    <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>.</p>
-  <p>The game does not use analytics or crash-reporting SDKs, and it has no user accounts.</p>
-
-  <h2>4. Advertising and your choices</h2>
-  <ul>
-    <li><strong>Consent:</strong> If you are in the European Economic Area, the United Kingdom or Switzerland, the game shows Google's consent form before it serves ads. You can change your choice at any time in <em>Settings → Ad privacy choices</em>.</li>
-    <li><strong>Personalized ads:</strong> You can reset or delete your advertising ID, or opt out of ad personalization, in your device settings (on Android: <em>Settings → Google → Ads</em> or <em>Settings → Privacy → Ads</em>).</li>
-    <li><strong>Rewarded videos are optional.</strong> You never have to watch one to keep playing. Hints, erasers, extra spins, continues and level skips can also be earned or bought with in-game coins.</li>
-  </ul>
-
-  <h2>5. Notifications</h2>
-  <p>On Android 13 and later, and on iOS, the game asks for your permission before sending notifications. You can turn them off at any time in your device's app settings.</p>
-
-  <h2>6. Permissions</h2>
-  <p>The game uses internet access (to load ads and settings) and, if you allow it, notification permission. It does not request access to your location, camera, microphone, contacts or files.</p>
-
-  <h2>7. Children</h2>
-  <p>The game is not directed at children under 13, and we do not knowingly collect personal information from children. If you believe a child has provided personal information through the game, please contact us and we will help remove it.</p>
-
-  <h2>8. Data retention and security</h2>
-  <p>We do not keep personal data on our own servers. Data processed by Google services is kept according to Google's policies. Data sent between the game and these services is encrypted in transit using HTTPS/TLS.</p>
-
-  <h2>9. Your rights</h2>
-  <p>Depending on where you live (for example, under the GDPR in Europe or the CCPA/CPRA in California), you may have the right to access or delete your personal data, object to or restrict its processing, and withdraw your consent. Because the game does not have accounts and does not store your data on our servers, you can:</p>
-  <ul>
-    <li>delete the progress saved on your device by uninstalling the game or using <em>Reset progress</em>,</li>
-    <li>manage ad consent in <em>Settings → Ad privacy choices</em> and in your device's ad settings, and</li>
-    <li>contact us at <a href="mailto:amarj234@gmail.com">amarj234@gmail.com</a> with any request. We will reply within 30 days.</li>
-  </ul>
-  <p>We do not sell your personal information for money. Sharing data with Google for advertising, as described above, may count as "sharing" under some laws. You can limit it using the choices in section 4.</p>
-
-  <h2>10. Changes to this policy</h2>
-  <p>We may update this policy from time to time. When we do, we will post the new version on this page and change the effective date above.</p>
-
-  <h2>11. Contact</h2>
-  <p>NXTL Solutions<br>Email: <a href="mailto:amarj234@gmail.com">amarj234@gmail.com</a></p>
+</div>
+<footer>© 2026 Balliram · Brain Tap: Arrow Exit · <a href="terms.html">Terms of Use</a></footer>
 </main>
 </body>
 </html>
