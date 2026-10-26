@@ -88,7 +88,7 @@
 <body>
 <header>
   <span class="badge">PLANK NUTS</span>
-  <p>Privacy Policy &middot; Effective 4 October 2026</p>
+  <p>Privacy Policy &middot; Effective 26 October 2026 &middot; Last updated 26 October 2026</p>
 </header>
 
 <main>
@@ -96,10 +96,12 @@
     <strong>In short:</strong>
     <ul>
       <li>We don't ask for your name, email, contacts, precise location or any account.</li>
-      <li>Your game progress stays on your device.</li>
-      <li>Levels and game content are downloaded from our Google Firebase (Cloud Firestore) server. This is read-only &mdash; we don't upload your progress.</li>
+      <li>Your game progress (levels, stars, coins, settings, daily goals) stays on your device.</li>
+      <li>Optional daily reminders are scheduled and shown by your device. Nothing about them is sent to us.</li>
+      <li>Levels and game content are built into the App. The App uses the internet for ads, in-app purchases, and (if allowed) news notifications.</li>
       <li>If you allow notifications, we use Firebase Cloud Messaging and on-device reminders. You can turn them off at any time.</li>
       <li>The free version shows ads from Google AdMob, which uses your device's advertising ID. You can limit this at any time.</li>
+      <li>In-app purchases (Remove Ads, Coins) are processed by Google Play / Apple. We don't receive your payment details.</li>
       <li>We don't sell your personal information.</li>
     </ul>
   </div>
@@ -111,46 +113,37 @@
     contact us at <a href="mailto:amarj234@gmail.com">amarj234@gmail.com</a>.
   </p>
 
-  <h2>2. Information stored on your device</h2>
+  <h2>2. In-app purchases</h2>
+  <p>
+    The App offers optional in-app purchases through Google Play (Android) and the App Store (iOS):
+  </p>
+  <ul>
+    <li><strong>Remove Ads</strong> (non-consumable): a one-time purchase that removes all ads and lifts the daily offline-play limit.</li>
+    <li><strong>500 Coins pack</strong> (consumable): adds 500 coins to your balance for use in the shop.</li>
+  </ul>
+  <p>
+    Purchases are processed by the store (Google Play / Apple). We do not receive your payment details.
+    Purchase records (product ID, order ID, purchase token) are stored on your device and sent to the store
+    for verification and restoration. We use this only to grant the purchased items in the game.
+  </p>
+  <p>
+    You can restore past purchases from Settings → Restore Purchases.
+  </p>
+
+  <h2>3. Information stored only on your device</h2>
   <p>
     The game saves the following on your device so it can remember your progress: levels
-    unlocked, stars, coins, boosters, cosmetic items, daily-challenge streak, notification
-    preferences and settings (sound, vibration). This information is <strong>never sent to us</strong>.
+    unlocked, stars, coins, boosters, cosmetic items, daily-challenge streak, daily gift status,
+    daily goals progress, notification preferences and settings (sound, vibration, daily reminders on or off).
+    This information is <strong>never sent to us</strong>.
     It is deleted when you uninstall the app or clear its data.
   </p>
 
-  <h2>3. Game content from Cloud Firestore</h2>
+  <h2>4. Information we collect</h2>
   <p>
-    To give you new levels, events and game settings without an app update, the game downloads
-    content from <strong>Google Cloud Firestore</strong>, part of Google Firebase. The app only
-    <em>reads</em> this content; it does not upload your progress, scores or personal details to
-    Firestore. Downloaded content may be cached on your device so the game also works offline.
-  </p>
-  <p>
-    When your device connects to Firebase, Google necessarily receives technical information such
-    as your <strong>IP address</strong>, device and app information (OS version, app version) and
-    request timestamps. Google uses this to deliver the content, keep the service secure and
-    prevent abuse. We do not use it to identify you.
-  </p>
-
-  <h2>4. Notifications</h2>
-  <p><strong>Push notifications (Firebase Cloud Messaging).</strong>
-    We may send notifications about new levels, events, daily challenges or rewards using
-    <strong>Firebase Cloud Messaging (FCM)</strong>. To deliver them, FCM creates a
-    <strong>registration token</strong> (a random identifier for this app installation, linked to a
-    Firebase installation ID). This token is stored by Google Firebase on our behalf and is used
-    only to send notifications to your device. It does not contain your name, email or phone number.
-  </p>
-  <p><strong>Local notifications.</strong>
-    The game can also schedule reminders directly on your device (for example, "your daily
-    challenge is ready"). These are created and shown entirely on your device &mdash; no data is
-    sent to us or any third party to schedule them.
-  </p>
-  <p><strong>Your control.</strong>
-    On Android 13 and newer, the app asks for your permission before showing any
-    notifications. You can say no, and the game works exactly the same. You can change this at any
-    time in your device's <em>Settings &rsaquo; Apps &rsaquo; Plank Nuts &rsaquo; Notifications</em>
-    (or the in-game settings, where available). Notifications are never used to show ads.
+    We do not collect, receive or store personal information on our own servers. The levels are built into
+    the App and the game runs entirely on your device; the App uses the internet only to load ads (and their settings),
+    process in-app purchases through the store, and, if you allow them, to receive news notifications (see section 7).
   </p>
 
   <h2>5. Advertising (Google AdMob)</h2>
@@ -168,23 +161,25 @@
     </table>
   </div>
 
-  <h2>6. Summary of data collected by the app</h2>
-  <div class="table-wrap">
-    <table>
-      <tr><th>Data</th><th>Service</th><th>Purpose</th><th>Shared / sold?</th></tr>
-      <tr><td>Advertising ID</td><td>Google AdMob</td><td>Advertising, analytics of ads, fraud prevention</td><td>Processed by Google; not sold by us</td></tr>
-      <tr><td>FCM registration token / Firebase installation ID</td><td>Firebase Cloud Messaging</td><td>Sending push notifications</td><td>Processed by Google; not sold</td></tr>
-      <tr><td>IP address, device &amp; app info</td><td>Firebase, AdMob</td><td>Delivering content and ads, security, fraud prevention</td><td>Processed by Google; not sold</td></tr>
-      <tr><td>Game progress &amp; settings</td><td>On device only</td><td>Saving your progress</td><td>Never leaves your device</td></tr>
-    </table>
-  </div>
   <p>
-    All data sent over the network is <strong>encrypted in transit</strong> (HTTPS/TLS).
-    Google acts as our service provider (data processor) for Firebase. Google's handling of data is
-    described in the
+    Ads may be personalised where the law allows and, in the EEA, the UK and Switzerland, only with your
+    consent. Google processes this data under its own policies:
     <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>,
-    <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacy and Security in Firebase</a> and
     <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from sites or apps that use its services</a>.
+    We do not sell your personal information.
+  </p>
+  <p>
+    Watching a rewarded video (for example to double your coins or get a free booster) is always optional.
+  </p>
+  <p>
+    If you purchase "Remove Ads", all ads (banners, interstitials, rewarded videos) are permanently removed
+    from the App for that account.
+  </p>
+
+  <h2>6. Game engine</h2>
+  <p>
+    The puzzle board runs on the Unity engine, entirely on your device. Unity's analytics, crash reporting
+    and other cloud services are turned off in the App, so Unity does not receive data from it.
   </p>
 
   <h2>7. Your choices and consent</h2>
@@ -198,15 +193,50 @@
       <strong>Android:</strong> you can reset or delete your advertising ID, or opt out of personalised
       ads, in <em>Settings &rsaquo; Privacy &rsaquo; Ads</em> (the exact path depends on your device).
     </li>
-    <li><strong>Notifications:</strong> turn them off at any time in your device settings (see section 4).</li>
+    <li><strong>US state privacy laws:</strong> we do not sell personal information for money. Using an advertising ID for
+      targeted ads may count as "sharing" under some state laws; you can opt out with the advertising ID
+      controls above.</li>
+    <li><strong>Notifications:</strong> turn them off at any time in the game's settings or your device settings (see section 9).</li>
     <li>Watching rewarded videos is always optional.</li>
+    <li><strong>Game data:</strong> delete it with Settings → Reset progress, or by uninstalling the App.</li>
+    <li><strong>Purchases:</strong> restore them in Settings → Restore Purchases, or contact the store (Google Play / Apple) for refunds.</li>
   </ul>
 
-  <h2>8. Other services</h2>
+  <h2>8. Notifications and permissions</h2>
+  <p><strong>Daily reminders.</strong>
+    If you allow notifications, the App shows up to five reminders a day (for example when your
+    daily gift or the Daily Challenge is ready, how your daily goals are going, or which level is
+    next), and a few "come back" reminders if you haven't played for some days. They are scheduled
+    and shown by your device, using the progress saved on it &mdash; nothing about the reminders is
+    sent to us, to Google or to anyone else. Turn them off at any time in the game's
+    <em>Settings &rsaquo; Daily reminders</em> or in your device's notification settings.
+  </p>
+  <p><strong>News notifications.</strong>
+    We may also send occasional notifications about new levels, events and rewards through
+    <strong>Firebase Cloud Messaging (FCM)</strong>. To deliver them, FCM creates a
+    <strong>registration token</strong> (a random identifier for this app installation, linked to a
+    Firebase installation ID). This token is stored by Google Firebase on our behalf and is used
+    only to send notifications to your device. It does not contain your name, email or phone number.
+    Turn them off in <em>Settings &rsaquo; Notifications</em>.
+  </p>
+  <p><strong>Your control.</strong>
+    On Android 13 and newer, the app asks for your permission before showing any
+    notifications. You can say no, and the game works exactly the same. You can change this at any
+    time in your device's <em>Settings &rsaquo; Apps &rsaquo; Plank Nuts &rsaquo; Notifications</em>,
+    or in the game's <em>Settings &rsaquo; Notifications</em> (news) and
+    <em>Settings &rsaquo; Daily reminders</em>. On iOS, the game asks for permission before showing any
+    notification. Notifications are never used to show ads.
+  </p>
+  <p><strong>Android permissions.</strong> The Android app requests:</p>
+  <ul>
+    <li><strong>Internet</strong> and network-state access, which ads, purchases, game content and push notifications need</li>
+    <li><strong>Notifications</strong> (Android 13 and later ask you first), to show reminders and push notifications</li>
+    <li><strong>Run at startup</strong>, so the reminders that are already scheduled are restored after your device restarts</li>
+    <li><strong>Vibration</strong>, used by the game's haptic feedback and by notifications</li>
+    <li>The advertising ID and related ad permissions the AdMob SDK adds</li>
+  </ul>
   <p>
-    The game board is drawn with the Unity game engine. We have not turned on Unity Analytics,
-    Unity Ads or any other Unity data service. We do not use Firebase Analytics, Crashlytics or
-    Firebase Authentication. The app has no sign-in, no social features and no in-app purchases.
+    The game does not access your camera, microphone, contacts, photos, files or precise location.
   </p>
 
   <h2>9. Children</h2>
@@ -222,7 +252,7 @@
     <li><strong>FCM registration tokens</strong> stop working when you uninstall the app, clear its data
       or turn off notifications, and are removed by Firebase after a period of inactivity (Google
       currently treats tokens inactive for 270 days as expired).</li>
-    <li><strong>Firestore content</strong> is game content only and contains no personal data about you.</li>
+    <li><strong>Purchase records</strong> are kept by the store (Google Play / Apple) according to their policies.</li>
     <li><strong>Advertising data</strong> is kept by Google according to its retention policies.</li>
   </ul>
   <p>
@@ -237,7 +267,7 @@
     you may have the right to access, correct, delete or object to the processing of personal
     information, to withdraw consent, and to opt out of the "sale" or "sharing" of personal information
     for targeted advertising. Because we don't hold your personal data ourselves, the fastest way to
-    use these rights is through the choices in sections 4 and 7 and Google's tools. You can also
+    use these rights is through the choices in sections 7 and 10 and Google's tools. You can also
     contact us and we'll help. Data may be processed by Google on servers outside your country, under
     Google's standard safeguards.
   </p>
@@ -253,7 +283,7 @@
     Balliram<br>
     Email: <a href="mailto:amarj234@gmail.com">amarj234@gmail.com</a>
   </p>
-  <p class="muted">This policy applies to the Plank Nuts app for Android, distributed on Google Play.</p>
+  <p class="muted">This policy applies to the Plank Nuts app for Android and iOS, distributed on Google Play and the App Store.</p>
 </main>
 
 <footer>&copy; 2026 Balliram. All rights reserved.</footer>
