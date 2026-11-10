@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Runner Reels: 3D Cartoon Maker</title>
+  <meta content="Runner Reels creates unique 3D cartoon reels with chibi characters, voices, music and AI-written stories - all on your phone. 6 story templates, quick math gates, optional local LLM." name="description">
+  <meta content="Flutter, Unity, AI, LLM, llama.cpp, 3D Animation, Cartoon Maker, Mobile App" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style-folio.css" rel="stylesheet">
+
+  <style>
+    .documentation-section {
+      margin-top: 30px;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    .documentation-section h4 {
+      color: #9d50bb;
+      margin-bottom: 25px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+    }
+    .placeholder-icon {
+      width: 200px;
+      height: 200px;
+      background: linear-gradient(135deg, #6e48aa, #9d50bb);
+      border-radius: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 80px;
+      color: white;
+      font-weight: bold;
+      margin: 0 auto;
+      box-shadow: 0 20px 40px rgba(110, 72, 170, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+    .placeholder-icon::after {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        background: rgba(255,255,255,0.1);
+        transform: rotate(45deg);
+        top: -50%;
+        left: -50%;
+    }
+    .tech-tag {
+        display: inline-block;
+        padding: 5px 15px;
+        background: rgba(157, 80, 187, 0.15);
+        color: #c471ed;
+        border: 1px solid rgba(157, 80, 187, 0.3);
+        border-radius: 50px;
+        font-size: 0.85rem;
+        margin: 5px;
+        font-weight: 500;
+    }
+    .feature-card {
+        padding: 20px;
+        background: rgba(255,255,255,0.05);
+        border-radius: 15px;
+        margin-bottom: 15px;
+        transition: 0.3s;
+    }
+    .feature-card:hover {
+        background: rgba(255,255,255,0.08);
+        transform: translateY(-5px);
+    }
+    .feature-card i {
+        font-size: 2rem;
+        color: #9d50bb;
+        margin-bottom: 15px;
+        display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Runner Reels: 3D Cartoon Maker</h2>
+
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide text-center">
+                  <img src="../assets/img/portfolio/runner_reels/feature.jpg" alt="Runner Reels: 3D Cartoon Maker screenshot" class="img-fluid rounded-4" style="max-height: 600px;">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="documentation-section">
+                <h4><b>📱 Overview</b></h4>
+                <p>Make cute 3D cartoon reels right on your phone, in one tap! Runner Reels creates a brand new short cartoon every time: chibi characters, a fun story, voices, music and sound effects. Save it to your gallery and share as a reel or short.</p>
+            </div>
+
+            <div class="documentation-section">
+                <h4><b>✨ Key Features</b></h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="feature-card text-center">
+                            <i class="bi bi-film"></i>
+                            <h5>6 Story Templates</h5>
+                            <p class="small text-muted">Rescue, Boss Fight, Thirsty Friend, Frozen Friend, Chase, Food Stack - each with unique 3D animations.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature-card text-center">
+                            <i class="bi bi-cpu"></i>
+                            <h5>On-device AI Stories</h5>
+                            <p class="small text-muted">Optional local LLM download (llama.cpp) writes new titles and dialogue for every reel, fully offline.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature-card text-center">
+                            <i class="bi bi-123"></i>
+                            <h5>Quick Math Gates</h5>
+                            <p class="small text-muted">"HELP ME!" math problems pop up during the run: 2 + 3 = ? Pick the right gate to continue!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature-card text-center">
+                            <i class="bi bi-emoji-smile"></i>
+                            <h5>Chibi Characters</h5>
+                            <p class="small text-muted">Big-eyed characters in bunny, penguin, unicorn, dino, panda and more hoods react to every moment.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature-card text-center">
+                            <i class="bi bi-lock"></i>
+                            <h5>Privacy First</h5>
+                            <p class="small text-muted">No account needed. Stories, voices and videos are made on your phone. Nothing leaves the device.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature-card text-center">
+                            <i class="bi bi-bell"></i>
+                            <h5>Optional Daily Reminder</h5>
+                            <p class="small text-muted">Friendly nudge when a new story is ready. Turn off anytime in settings.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="documentation-section">
+                <h4><b>🛠️ Technical Stack</b></h4>
+                <div class="tech-stack-container">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">Unity</span>
+                    <span class="tech-tag">llama.cpp</span>
+                    <span class="tech-tag">On-device AI</span>
+                    <span class="tech-tag">AdMob</span>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-4 portfolio-info">
+            <ul>
+              <div class="row">
+                <li>
+                  <div class="row d-flex justify-content-start gap-2">
+                    <a href="https://play.google.com/store/apps/details?id=com.runner.reels" target="_blank" class="download-btn android">
+                      <i class="bi bi-play-fill"></i> Play Store
+                    </a>
+                  </div>
+                </li>
+                &nbsp;
+                <li>
+                  <img src="../assets/img/portfolio/runner_reels/logo.png" alt="Runner Reels: 3D Cartoon Maker icon" class="img-fluid rounded-4 mb-3" style="max-width: 120px;">
+                  <h4><b>👨‍💻 Project Details</b></h4>
+                  <p>🔹 <strong>Category:</strong> Entertainment / Video Players & Editors</p>
+                  <p>🔹 <strong>Package:</strong> com.runner.reels</p>
+                  <p>🔹 <strong>Publisher:</strong> <a href="https://play.google.com/store/apps/dev?id=8140824484459826240" target="_blank">Balliram App Development</a></p>
+                  <p>🔹 <strong>Role:</strong> Design, development and Play Store release</p>
+                  <p>🔹 <strong>Status:</strong> Live on Google Play</p>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Portfolio Details -->
+  </main>
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
